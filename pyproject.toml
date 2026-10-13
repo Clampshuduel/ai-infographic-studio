@@ -1,0 +1,26 @@
+[project]
+name = "ai-infographic-studio"
+version = "0.6.3"
+description = "Desktop AI infographic generator: turn datasets and prompts into publication-ready infographics."
+requires-python = ">=3.11"
+readme = "CONTRIBUTING.md"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
