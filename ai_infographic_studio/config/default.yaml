@@ -1,0 +1,14 @@
+version: 0.6.3
+log_level: INFO
+telemetry_opt_in: false
+llm:
+  backend: local
+  model: llama3.1:8b
+  api_key_ref: ai-infographic-studio/openai
+  timeout_s: 60.0
+  max_retries: 3
+render:
+  workers: 4
+  dpi: 220
+  default_format: png
+  output_dir: ~/Pictures/ai-infographic-studio
