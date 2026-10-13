@@ -1,0 +1,1 @@
+"""Application bootstrap and Qt entry point."""
